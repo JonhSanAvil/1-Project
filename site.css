@@ -75,6 +75,8 @@ h5 {
 
 /* Este codigo es para crear una transcición de color por encima del texto 
 pero no me funciona si no hay texto ejemplo https://developer.mozilla.org/es/docs/Web/CSS/:hover
+
+Era una opción que quería probar para conseguir cambiar el color sin pulsar el
 .a {
   background-color: black;
   transition: background-color .5s;
@@ -85,6 +87,8 @@ pero no me funciona si no hay texto ejemplo https://developer.mozilla.org/es/doc
 }
 */
 
+/* Aquí coloque a por encima de otros elementos html ya que quería primero que todo el texto estuviera
+enlazado a la web de hotel y que dicho enlace no se marcara por eso lo de text decoration none */
 a {
   padding: 10;
   outline: none;
@@ -97,6 +101,7 @@ a {
   border-radius: 6px;
 }
 
+/* Esto no me acuerdo de donde lo vi, quería saber que es la etiqueta a: focus, visited, link  */
 a:link,
 a:visited,
 a:focus {
