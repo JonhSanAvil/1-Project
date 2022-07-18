@@ -68,12 +68,36 @@ h5 {
   font-weight: 700;
 }
 
+<<<<<<< HEAD
 /*Como hago las estrellas más grandes usando un seudoselector > y asi marco los span que hay dentro de la clase stars*/
 .stars > span {
   max-width: 100px;
   /* font-size: 70px; para atacar a los emoticonos ya que los emoticonos se consederan texto*/
 }
 
+=======
+/*Como hago las estrellas más grandes*/
+.stars {
+  max-width: 100px;
+}
+
+/* Este codigo es para crear una transcición de color por encima del texto 
+pero no me funciona si no hay texto ejemplo https://developer.mozilla.org/es/docs/Web/CSS/:hover
+
+Era una opción que quería probar para conseguir cambiar el color sin pulsar el
+.a {
+  background-color: black;
+  transition: background-color .5s;
+}
+
+.a:hover {
+  background-color: grey;
+}
+*/
+
+/* Aquí coloque a por encima de otros elementos html ya que quería primero que todo el texto estuviera
+enlazado a la web de hotel y que dicho enlace no se marcara por eso lo de text decoration none */
+>>>>>>> a8a5f7bcb0fdb54e67cd6ec0e8cba58af9a8a6bb
 a {
   padding: 10;
   outline: none;
@@ -86,6 +110,10 @@ a {
   border-radius: 6px;
 }
 
+<<<<<<< HEAD
+=======
+/* Esto no me acuerdo de donde lo vi, quería saber que es la etiqueta a: focus, visited, link  */
+>>>>>>> a8a5f7bcb0fdb54e67cd6ec0e8cba58af9a8a6bb
 a:link,
 a:visited,
 a:focus {
@@ -130,6 +158,11 @@ h4 {
 
 .imagenes1 {
   display: flex;
+<<<<<<< HEAD
+=======
+  margin-right: 5px;
+  margin-left: 5px;
+>>>>>>> a8a5f7bcb0fdb54e67cd6ec0e8cba58af9a8a6bb
   margin-top: -20px;
   margin-left: -5px;
   margin-right: 76px;
@@ -145,11 +178,14 @@ h4 {
   display: inline-block;
   text-align: center;
 }
+<<<<<<< HEAD
 .foto1:hover {
   background: white;
   color: black;
 }
 
+=======
+>>>>>>> a8a5f7bcb0fdb54e67cd6ec0e8cba58af9a8a6bb
 
 /* Aquí queria crear un efecto de superopición entre la imagen de fondo de la playa
 y el texto de Playa, lorem. el problema que no conseguía crear una capa de veledura que fuera
@@ -178,7 +214,11 @@ la transición entre ambos elementos como he creado en familia */
 
 .foto2 {
   width: 100%;
+<<<<<<< HEAD
   height: 50%;
+=======
+  height: 100%;
+>>>>>>> a8a5f7bcb0fdb54e67cd6ec0e8cba58af9a8a6bb
   margin: 0 0px 5px 0px;
   border-radius: 20px;
   cursor: pointer;
@@ -204,7 +244,10 @@ la transición entre ambos elementos como he creado en familia */
   justify-content: space-between;
   align-items: center;
   padding-bottom: 10px;
+<<<<<<< HEAD
   height: 100%;
+=======
+>>>>>>> a8a5f7bcb0fdb54e67cd6ec0e8cba58af9a8a6bb
  }
 
 figure {
@@ -216,7 +259,11 @@ figcaption {
   position: absolute;
   top: 0px;
   left: 0px;
+<<<<<<< HEAD
   bottom: 25px;
+=======
+  bottom: 0px;
+>>>>>>> a8a5f7bcb0fdb54e67cd6ec0e8cba58af9a8a6bb
   right: 0px;
   background: rgba(0,0,0,.7);
   text-align: center;
@@ -232,6 +279,25 @@ figure:hover figcaption{
   display: block;
 }
 
+<<<<<<< HEAD
+=======
+.campamento {
+  width: 100%;
+  height: 100%;
+}
+
+.crucero {
+  width: 100%;
+  height: 100%;
+}
+
+.caravana {
+  width: 100%;
+  height: 100%;
+}
+
+
+>>>>>>> a8a5f7bcb0fdb54e67cd6ec0e8cba58af9a8a6bb
 .footer {
   padding: 30px;
   text-align: center;
