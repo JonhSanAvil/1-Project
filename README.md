@@ -1,1 +1,1 @@
-BootcampJS
+Projects and activities about BootcampJS
