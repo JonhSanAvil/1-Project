@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgba(179, 235, 221, 0.829);
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+}
+
+.img {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+/* Antonio una duda aquí el actions es un id no debería ir marcado como # y no por . */
+.data,
+.actions {
+    padding: 16px;
+    
+}
+.data{
+    margin-bottom: -20px;
+}
+
+b {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    font-size: 200%;
+    text-transform:uppercase;
+    text-decoration: underline;
+      
+}
+
+#name,#lastName {
+    color: grey;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 32px 0;
+    border: 2px solid white;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#actions {
+    padding: 0px 20px;
+   
+}
+
+button {
+    background-color:rgba(36, 153, 124, 0.829);
+    width: 50%;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+background-color: white;
+color:rgba(36, 153, 124, 0.829);
+}
+
