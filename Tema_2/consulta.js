@@ -16,7 +16,7 @@ document.getElementById("rating").innerHTML = puntuacion + " estrellas";
 
 var aceptaCondiciones = confirm("¿Desea que su reseña sea anonima?");
 document.getElementById("anonymous").checked = aceptaCondiciones;
-/* Preguntar por checked y innerHTML funciones entiendo que checked es para marcar
-el check pero innerHTML ¿? */
+
+/* Recordar la importancia de innerHTML y checked, src. */
 
 

@@ -57,6 +57,8 @@ if(mayorNumeroDeNoches = booking1.count > booking2.count) {
     console.log(booking2.count);
 } */
 
+
+
 /* Ampliar una noche más una reserva.*/
 
 const ampliar1= ++booking1.count
@@ -87,9 +89,16 @@ const mayorPrecioReserva = total1final > total2final ? total1final : total2final
 console.log(mayorPrecioReserva);
 
 /* Mostrar número de reservas a las que se podrían aplicar descuento.*/
+let reservasConDescuento = 0;
 
+if (totalReserva1 > 500) {
+    reservasConDescuento++;
+}
 
-
+if (totalReserva2 > 500) {
+    reservasConDescuento++;
+}
+console.log("Hay", reservasConDescuento +" reservas con descuento");
 
 /* Mostrar "Todas con descuento" si las dos reservas tienen descuentos.*/
 

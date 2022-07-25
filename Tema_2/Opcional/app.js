@@ -45,3 +45,12 @@ var stars = {
 var rating = prompt("Puntuación: una, dos, tres, cuatro o cinco estrellas");
 
 document.getElementById("rating").innerHTML = stars[rating];
+
+/* IMPORTANTE 
+.innerHTML = stars[rating];
+hoteles[selectedHotel].name;
+Las partes entre [] corchetes es un string, que nos facilita coger otra variable de manera dinamica
+en este caso es por medio de prompt al hacer una pregunta e indicarle dos variables que ya estan declaradas
+los nombres de los hoteles y el punto . es clave para hacer referencia a que cargue el nombre, el lugar las demas
+variables del objeto
+*/
