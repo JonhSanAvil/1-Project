@@ -90,6 +90,7 @@ function showFullPrice () {
 
 document.getElementById("button").addEventListener("click", showFullPrice);
 
+//No consigo que funcione que cambie sin pulsar el boton de click 
 document.getElementById("input-numberNight").addEventListener("keyup", showFullPrice);
 document.getElementById("typeroom").addEventListener("keyup", showFullPrice);
 document.getElementById("Spa").addEventListener("keyup", showFullPrice);
