@@ -25,7 +25,6 @@ document.getElementById("multiply").addEventListener("click", showmultiply);
 document.getElementById("divide").addEventListener("click", showdivide);
 
 
-/* Antonio lo he intentado pero no consigo que salga Error */
 
 /* function showMistake() {
   if (isNaN(number1()) || isNaN(number2())) {
@@ -33,5 +32,4 @@ document.getElementById("divide").addEventListener("click", showdivide);
   }
 } */
 
-/* var mistake = number1 = !"" || number2 = !"" ? document.getElementById("resultado").innerText = "Error, debes introducir dos números" : console.log("funciona");
- */
+var mistake = number1 = !"" || number2 = !"" ? document.getElementById("resultado").innerText = "Error, debes introducir dos números" : console.log("funciona");
