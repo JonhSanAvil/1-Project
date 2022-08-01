@@ -1,17 +1,3 @@
-/*  Para calcular el coste de la estancia ten en cuenta lo siguiente:
-La tarifa de la habitación por noche es de 100€ para categoría Standard, 120€ Junior Suite y 150€ Suite.
-El uso del SPA incrementa la tarifa anterior en 20€.
-Una vez tengas la tarifa en función de la categoría y el SPA, la ocupación (individual o triple) actúa como un factor de
-decremento o incremento, siendo la opción de doble el estándar. Es decir, el uso individual reduce un 25% la tarifa por
-noche, mientras que el uso triple la incrementa en un 25%. El uso doble la deja tal cual.
-Cada noche de parking suma 10€.
-Un ejemplo de estancia sería:
-5 noches x Hab. Estándar con SPA de uso individual + 2 noches de parking. En este caso la tarifa por noche sería: (100€
-noche + 20€ spa) al 75% por uso individual = 90€/noche x 5 noches = 450€ + (10€ parking x 2 noches) = 470€ TOTAL.
-*/
-
-/* Primero coger los datos, declarar las variables y luego las funciones */
-
 //Declarar las funciones de valores de cada dato y coger los datos para asi ver que he seleccionado
 //Realizar los calculos
 function showFullPrice () {
@@ -104,5 +90,22 @@ function showFullPrice () {
 
 document.getElementById("button").addEventListener("click", showFullPrice);
 
+document.getElementById("input-numberNight").addEventListener("keyup", showFullPrice);
+document.getElementById("typeroom").addEventListener("keyup", showFullPrice);
+document.getElementById("Spa").addEventListener("keyup", showFullPrice);
+document.getElementById("SpaNo").addEventListener("keyup", showFullPrice);
+document.getElementById("occupation").addEventListener("keyup", showFullPrice);
+document.getElementById("parking").addEventListener("keyup", showFullPrice);
 
 
+/*  Para calcular el coste de la estancia ten en cuenta lo siguiente:
+La tarifa de la habitación por noche es de 100€ para categoría Standard, 120€ Junior Suite y 150€ Suite.
+El uso del SPA incrementa la tarifa anterior en 20€.
+Una vez tengas la tarifa en función de la categoría y el SPA, la ocupación (individual o triple) actúa como un factor de
+decremento o incremento, siendo la opción de doble el estándar. Es decir, el uso individual reduce un 25% la tarifa por
+noche, mientras que el uso triple la incrementa en un 25%. El uso doble la deja tal cual.
+Cada noche de parking suma 10€.
+Un ejemplo de estancia sería:
+5 noches x Hab. Estándar con SPA de uso individual + 2 noches de parking. En este caso la tarifa por noche sería: (100€
+noche + 20€ spa) al 75% por uso individual = 90€/noche x 5 noches = 450€ + (10€ parking x 2 noches) = 470€ TOTAL.
+*/
