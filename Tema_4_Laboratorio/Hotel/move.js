@@ -6,13 +6,13 @@ function showFullPrice () {
     //Obtengo las noches
     var numberNight = document.getElementById("input-numberNight").value;
     if(numberNight <= 0) {
-         fullPrice = "Minimo tienes que elegir una noche" 
+         fullPrice = "Minimo tienes que elegir una noche, " 
      } else {(fullPrice = numberNight + " noches")}
     
 
     //Obtengo el tipo de habitación
     var typeroom = document.getElementById("typeroom").value;
-    fullPrice = fullPrice + " " + typeroom;
+    fullPrice = fullPrice + " " + typeroom +",";
     var typeRoomPrice = document.getElementById("typeroom").value;
     if (typeRoomPrice === "Standard") {
         typeRoomPrice = { price:100 }
@@ -31,13 +31,13 @@ function showFullPrice () {
     } else {
         var spa = "";
     }
-    fullPrice = fullPrice + " " + spa;
+    fullPrice = fullPrice + " " + spa+",";
     if (document.getElementById("SpaNo").checked) {
             var spaNo = document.getElementById("SpaNo").value;
         }else {
         var spaNo = "";
     }
-    fullPrice = fullPrice + " " + spaNo;
+    fullPrice = fullPrice + " " + spaNo+",";
 
     if (document.getElementById("Spa").checked) {
         var spaPrice = document.getElementById("Spa").checked
@@ -47,7 +47,7 @@ function showFullPrice () {
    
     //Obtengo la ocupación
     var occupation = document.getElementById("occupation").value;
-    fullPrice = fullPrice + " " + occupation;
+    fullPrice = fullPrice + " " + occupation+",";
     var occupationPrice = document.getElementById("occupation").value;
     if (occupationPrice === "Individual") {
         occupationPrice = 0.75
@@ -64,7 +64,7 @@ function showFullPrice () {
     if(parkingNight <= 0) {
        //aquí me gustaría decir nada para que si hay menos 0 o 0 no aparezca valor ninguno
         fullPrice = fullPrice + "" 
-    } else {(fullPrice = fullPrice + " " + parkingNight + " noches de parking")}
+    } else {(fullPrice = fullPrice + " " + parkingNight + " noches de parking,")}
 
 
     //Pintamos resultado 
@@ -74,20 +74,19 @@ function showFullPrice () {
    
    //desglose de gastos ¿Cómo podría ponerlo mejor desglosado? Uno por linea ya que aqui no hay br
     document.getElementById("breakdown").innerText = 
-    ((typeRoomPrice.price*1+"€ precio por una noche")
+    ((typeRoomPrice.price*1+"€ precio por una noche, ")
     +" "+ 
-    (typeRoomPrice.price*numberNight+"€ precio total de las noches")
+    (typeRoomPrice.price*numberNight+"€ precio total de las noches, ")
     +" "+
-    (spaPrice.price + "€ precio por el spa")
+    (spaPrice.price + "€ precio por el spa, ")
     +" "+
-    ("Si es 1 no ha cambio en el precio, si es otro cambio del "+occupationPrice+"%" )
+    ("Si es 1 no ha cambio en el precio, si es otro cambio del "+occupationPrice+"%, ")
     +" "+
-    (10*1+"€ precio por una noche de parking")
+    (10*1+"€ precio por una noche de parking, ")
     +" "+
-    (10*parkingNight+"€ precio total de las noches del parking"));
+    (10*parkingNight+"€ precio total de las noches del parking, "));
 
 }
-
 document.getElementById("button").addEventListener("click", showFullPrice);
 
 //No consigo que funcione que cambie sin pulsar el boton de click 

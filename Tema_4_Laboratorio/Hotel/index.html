@@ -9,35 +9,41 @@
   </head>
   <body>
     
-    <h1>Reservas</h1>
-    <h3>Tipo de habitación</h3>
-    <select id="typeroom"name="Tipo de habitación">
-      <option class="Standard" value="Standard">Standard</option>
-      <option class="JuniorSuite" value="Junior Suite">Junior Suite</option>
-      <option class="Suite" value="Suite" selected>Suite</option>
-    </select>
+    <h2 id="title">Reservas</h2>
+    <div id="box1">
+    <h3>Tipo de habitación 
+      <select id="typeroom"name="Tipo de habitación">
+        <option class="Standard" value="Standard">Standard</option>
+        <option class="JuniorSuite" value="Junior Suite">Junior Suite</option>
+        <option class="Suite" value="Suite" selected>Suite</option>
+      </select>
+    </h3>
+    
 
-    <h3>Spa</h3>
-    <label for=""><input type="checkbox" value="Spa si" name="Spa" id="Spa" /> Spa si</label>
+    <h3>Spa:
+      <label for=""><input type="checkbox" value="Spa si" name="Spa" id="Spa" /> Spa si</label>
     <label for=""><input type="checkbox" value="Spa no" name="Spa" id="SpaNo" /> Spa no</label>
-<br>
-<br>
-<h3>Ocupación Habitación</h3>
-    <select name="Ocupación Habitación" id="occupation">
-      <option value="Individual">Indivudal</option>
-      <option value="Doble">Doble</option>
-      <option value="Triple">Triple</option>
-    </select>
+    </h3>
+<h3>Ocupación Habitación
+  <select name="Ocupación Habitación" id="occupation">
+    <option value="Individual">Indivudal</option>
+    <option value="Doble">Doble</option>
+    <option value="Triple">Triple</option>
+  </select>
+</h3>
+    
 
-<h3>Número de noches</h3>
-<input id="input-numberNight"type="number" placeholder="0">
+<h3>Número de noches
+  <input id="input-numberNight"type="number" placeholder="0">
+</h3>
 
-<h3>Cuantas noches de parking</h3>
-<input type="number" id="parking" placeholder="0">
 
-<br> <br>
+<h3>Cuantas noches de parking
+  <input type="number" id="parking" placeholder="0">
+</h3>
+
 <button id="button">Calcular</button>
-
+</div>
 <h2 id="result"></h2>
 <br>
 <h2 id="cost"></h2>

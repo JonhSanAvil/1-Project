@@ -1,0 +1,72 @@
+body {
+    margin: 1rem
+}
+
+#title {
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+    color:white;
+    text-transform: uppercase;
+    padding: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 4px 4px 4px 2px rgb(0 0 0 / 10%);
+}
+
+#box1 {
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+    color:white;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    line-height: 3;
+    box-shadow: 6px 8px 4px 2px rgb(0 0 0 / 10%);
+}
+
+#input-numberNight{
+    text-align: center;
+    width: 40px;
+}
+#parking{
+    text-align: center;
+    width: 40px;
+}
+
+#result {
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+    color:black;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    line-height: 2;
+    box-shadow: 6px 8px 4px 2px rgb(0 0 0 / 10%); 
+    margin-bottom: 0px;
+}
+#cost{
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+    color:black;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    line-height: 1;
+    box-shadow: 6px 8px 4px 2px rgb(0 0 0 / 10%); 
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+#breakdown{
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+    color:black;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    line-height: 1;
+    box-shadow: 6px 8px 4px 2px rgb(0 0 0 / 10%); 
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
