@@ -31,13 +31,13 @@ function showFullPrice () {
     } else {
         var spa = "";
     }
-    fullPrice = fullPrice + " " + spa+",";
+    fullPrice = fullPrice + " " + spa;
     if (document.getElementById("SpaNo").checked) {
             var spaNo = document.getElementById("SpaNo").value;
         }else {
         var spaNo = "";
     }
-    fullPrice = fullPrice + " " + spaNo+",";
+    fullPrice = fullPrice + " " + spaNo;
 
     if (document.getElementById("Spa").checked) {
         var spaPrice = document.getElementById("Spa").checked
