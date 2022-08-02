@@ -22,8 +22,7 @@ var showSubtract = () => {
     document.getElementById("resultado").value = subtract();
   }
 };
-var showmultiply = () =>
-{
+var showmultiply = () => {
   if (isNaN(number1()) || isNaN(number2())) {
     document.getElementById("resultado").value = "Error";
   } else {
@@ -37,11 +36,6 @@ var showdivide = () => {
     document.getElementById("resultado").value = divide();
   }
 };
-
-
-
-
-
 
 // Hasta aquí declarar las funcione, luego declarar los eventos
 
