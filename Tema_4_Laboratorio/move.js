@@ -38,6 +38,7 @@ var showdivide = () => {
 };
 
 // Hasta aquí declarar las funcione, luego declarar los eventos
+/* He probado ha añadir un resultado automatico al escribir para ver si funcionaba correctamente keyup  */
 document.getElementById("input-number1").addEventListener("keyup", showAdd);
 document.getElementById("input-number2").addEventListener("keyup", showAdd);
 document.getElementById("resultado").addEventListener("keyup", showAdd);
