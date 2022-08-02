@@ -96,13 +96,11 @@ function showFullPrice() {
 document.getElementById("button").addEventListener("click", showFullPrice);
 
 //No consigo que funcione que cambie sin pulsar el boton de click
-document
-  .getElementById("input-numberNight")
-  .addEventListener("keyup", showFullPrice);
-document.getElementById("typeroom").addEventListener("keyup", showFullPrice);
-document.getElementById("Spa").addEventListener("keyup", showFullPrice);
-document.getElementById("SpaNo").addEventListener("keyup", showFullPrice);
-document.getElementById("occupation").addEventListener("keyup", showFullPrice);
+document.getElementById("input-numberNight").addEventListener("keyup", showFullPrice);
+document.getElementById("typeroom").addEventListener("change", showFullPrice);
+document.getElementById("Spa").addEventListener("change", showFullPrice);
+document.getElementById("SpaNo").addEventListener("change", showFullPrice);
+document.getElementById("occupation").addEventListener("change", showFullPrice);
 document.getElementById("parking").addEventListener("keyup", showFullPrice);
 
 /*  Para calcular el coste de la estancia ten en cuenta lo siguiente:

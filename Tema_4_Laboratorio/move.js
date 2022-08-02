@@ -38,7 +38,9 @@ var showdivide = () => {
 };
 
 // Hasta aquí declarar las funcione, luego declarar los eventos
-
+document.getElementById("input-number1").addEventListener("keyup", showAdd);
+document.getElementById("input-number2").addEventListener("keyup", showAdd);
+document.getElementById("resultado").addEventListener("keyup", showAdd);
 document.getElementById("add").addEventListener("click", showAdd);
 document.getElementById("subtract").addEventListener("click", showSubtract);
 document.getElementById("multiply").addEventListener("click", showmultiply);
